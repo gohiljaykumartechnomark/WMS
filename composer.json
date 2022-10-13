@@ -12,7 +12,8 @@
         "backpack/crud": "4.1.*",
         "fideloper/proxy": "^4.4",
         "laravel/framework": "^6.20.26",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "twilio/sdk": "^6.42"
     },
     "require-dev": {
         "backpack/generators": "^3.3",
