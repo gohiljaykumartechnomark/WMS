@@ -21,7 +21,8 @@ Route::get('/send-message', function () {
     $token  = getenv("TWILIO_AUTH_TOKEN");
     $wa_from= getenv("TWILIO_WHATSAPP_FROM");
     $twilio = new Client($sid, $token);
-    $recipient = "+918153999379";
+    // $recipient = "+918153999379";
+    $recipient = "+917621827682";
     $userName = "Gohil Jaykumar";
     $timeStamp = date('Y-m-d h:i:s');
     
@@ -36,4 +37,8 @@ Route::get('/send-message', function () {
         "body" => $body,
         "MediaUrl" => $url
     ]);
+    /*return $twilio->messages->create("whatsapp:$recipient",[
+        "from" => "whatsapp:$wa_from", 
+        "body" => $body
+    ]);*/
 });
